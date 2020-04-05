@@ -3,6 +3,27 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: blanchedalmond;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  color: #BE253F;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  color: #484848;
+  font-size: 1em;
 }
 
 .container-header {
@@ -25,6 +46,21 @@ body {
   stroke-dashoffset: 3000;
   stroke-dasharray: 3000;
   animation: lettering-tracado 4.5s ease-in-out forwards 1s;
+}
+
+.container-cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
 }
 
 @keyframes lettering-preenchimento {
