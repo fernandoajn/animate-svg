@@ -191,6 +191,39 @@
         clip-path: url(#clip-path-22);
       }
     </style>
+
+    <style>
+    #caiaque-1, #caiaque-2 {
+      -webkit-animation: movimento-caiaque-1e2 3s ease-in-out 0s infinite alternate;
+    }
+
+    #caiaque-3, #caiaque-5 {
+      animation: movimento-caiaque-3e5 3s ease-in-out 0s infinite alternate;
+    }
+
+    #caiaque-4 {
+      animation: movimento-caiaque-4 3s ease-in-out 0s infinite alternate;
+    }
+
+    @keyframes movimento-caiaque-1e2 {
+      to {
+        transform: translate(5px, -10px);
+      }
+    }
+
+    @keyframes movimento-caiaque-3e5 {
+      to {
+        transform: translate(20px, -10px);
+      }
+    }
+
+    @keyframes movimento-caiaque-4 {
+      to {
+        transform: translate(-5px, 10px);
+      }
+    }
+    </style>
+
     <linearGradient id="linear-gradient" x1="700" y1="588.28" x2="700" y2="375.14" gradientTransform="translate(0 384.72)" gradientUnits="userSpaceOnUse">
       <stop offset="0.19" stop-color="#ffead4"/>
       <stop offset="0.9" stop-color="#ffdfa8"/>
