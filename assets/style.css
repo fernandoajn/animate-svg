@@ -8,3 +8,33 @@ body {
 .container-header {
   width: 100vw;
 }
+
+.lett-header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  margin-top: 10%;
+  fill: transparent;
+  animation: lettering-preenchimento .5s ease-in-out forwards 3s;
+}
+
+.lett-header path {
+  stroke-width: 2px;
+  stroke: #BE253F;
+  stroke-dashoffset: 3000;
+  stroke-dasharray: 3000;
+  animation: lettering-tracado 4.5s ease-in-out forwards 1s;
+}
+
+@keyframes lettering-preenchimento {
+  to {
+    fill: #BE253F;
+  }
+}
+
+@keyframes lettering-tracado {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
