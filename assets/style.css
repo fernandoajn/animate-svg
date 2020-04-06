@@ -64,9 +64,24 @@ p {
 }
 
 .lett-footer {
-  display: block;
-  margin: 0 auto;
+  fill: #fff;
+  opacity: .7;
+  position: absolute;
   width: 60%;
+  left: 20%;
+  margin-top: 20%;
+}
+
+.container-footer {
+  position: relative;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-info a {
+  color: #BE253F;
 }
 
 @keyframes lettering-preenchimento {
