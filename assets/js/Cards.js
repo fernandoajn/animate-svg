@@ -12,8 +12,6 @@ class Cards {
   calculoScroll() {
     const posicao = this.posicaoSectionDicas.getBoundingClientRect()['y'];
 
-    console.log(posicao);
-
     if(posicao >= 25) {
       this.cardEsquerda.style.transform = `translate(${((-posicao) + 25)/10}%)`;
       this.cardDireita.style.transform = `translate(${((posicao) - 25)/10}%)`;
